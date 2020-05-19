@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+from .models import *
+
 
 def home(request):
-    return HttpResponse('<h1>Library Home</h1>')
+    context = {
+        'books': Book.objects.all()
+    }
+    return render(request, 'library/home.html', context)
 
 def about(request):
     return HttpResponse('<h1>About</h1>')
