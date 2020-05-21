@@ -12,7 +12,7 @@ def home(request):
 
 class PostCreateView(CreateView):
     model = Book
-    fields = ['author', 'title']
+    fields = ['title', 'author']
 
 def about(request):
     return HttpResponse('<h1>About</h1>')
