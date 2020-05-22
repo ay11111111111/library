@@ -6,8 +6,12 @@ class Author(models.Model):
     second_name = models.CharField(max_length=30)
     num_books = models.IntegerField(default=0)
 
+
     def __str__(self):
         return self.first_name + ' ' + self.second_name
+
+    def get_absolute_url(self):
+        return reverse('book-create')
 
 class Book(models.Model):
     title = models.CharField(max_length=100)
@@ -18,6 +22,3 @@ class Book(models.Model):
 
     def get_absolute_url(self):
         return reverse('library-home')
-
-    # def save(self, *args, **kwargs):
-    #     super(Model, self).save(*args, **kwargs)
