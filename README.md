@@ -1,12 +1,12 @@
-# library
+# Library
 One Author can have several Books: ForeignKey Relation
 
 https://elefantoapp.herokuapp.com/  #List of Books
 
-https://elefantoapp.herokuapp.com/author/create
-https://elefantoapp.herokuapp.com/author/id
-https://elefantoapp.herokuapp.com/author/id/update
-https://elefantoapp.herokuapp.com/author/id/delete
+Create Author - https://elefantoapp.herokuapp.com/author/create 
+Read Author - https://elefantoapp.herokuapp.com/author/id
+Update Author - https://elefantoapp.herokuapp.com/author/id/update
+Delete Author - https://elefantoapp.herokuapp.com/author/id/delete
 
 https://elefantoapp.herokuapp.com/book/create
 https://elefantoapp.herokuapp.com/book/id
