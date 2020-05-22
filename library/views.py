@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 from .models import *
 
@@ -47,7 +48,3 @@ class BookUpdateView(UpdateView):
 class BookDeleteView(DeleteView):
     model = Book
     success_url = '/'
-
-
-def about(request):
-    return HttpResponse('<h1>About</h1>')

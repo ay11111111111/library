@@ -1,0 +1,15 @@
+{% extends "library/base.html" %}
+{% block content %}
+  <article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#"></a>
+        <!-- <small class="text-muted">{{ book.date_posted }}</small>
+      </div> -->
+      <h2 class="article-title">{{author.first_name}} {{ author.second_name }}</h2>
+
+      <h6 class="article-title">Number of books: {{author.book_set.count}}</h6>
+      <!-- <p class="article-content">{{ post.content }}</p> -->
+    </div>
+  </article>
+{% endblock content %}
